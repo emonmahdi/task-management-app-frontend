@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { Link } from "react-router";
 
-const Navbar = () => {
+const Navbar = ({ togglePopup }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(true); // Simulate authentication
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -23,8 +24,8 @@ const Navbar = () => {
           {/* Conditionally Render Add Task Button */}
           {isAuthenticated && (
             <Link
-              to="/add-task"
-              className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded transition"
+              onClick={togglePopup}
+              className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded transition cursor-pointer"
             >
               Add Task
             </Link>
