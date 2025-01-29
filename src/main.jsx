@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App.jsx";
 import Login from "./pages/auth/Login.jsx";
 import Register from "./pages/auth/Register.jsx";
+import EditTask from "./components/task/EditTask.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -13,6 +14,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/" element={<App />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
+        <Route path="/edit-task/:taskId" element={<EditTask />} />
         {/* <Route path="/add-task" element={<AddTask />}></Route> */}
       </Routes>
     </BrowserRouter>

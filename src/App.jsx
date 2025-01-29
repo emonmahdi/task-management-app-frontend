@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/common/Navbar";
 import AddTask from "./components/task/AddTask";
+import Tasks from "./components/task/Tasks";
 
 function App() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -29,6 +30,7 @@ function App() {
           </div>
         </div>
       )}
+      <Tasks />
     </div>
   );
 }

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Design Homepage UI",
+    "desc": "Create a responsive homepage layout using Tailwind CSS.",
+    "due_date": "2025-02-05",
+    "status": "pending"
+  },
+  {
+    "id": 2,
+    "name": "Integrate Authentication",
+    "desc": "Implement user login and registration with JWT authentication.",
+    "due_date": "2025-02-10",
+    "status": "pending"
+  },
+  {
+    "id": 3,
+    "name": "Setup Database",
+    "desc": "Configure MongoDB database and create necessary collections.",
+    "due_date": "2025-02-07",
+    "status": "complete"
+  },
+  {
+    "id": 4,
+    "name": "Task Filtering Feature",
+    "desc": "Implement filters for tasks based on status and due dates.",
+    "due_date": "2025-02-12",
+    "status": "pending"
+  },
+  {
+    "id": 5,
+    "name": "Optimize API Performance",
+    "desc": "Improve API response times by adding indexes and caching.",
+    "due_date": "2025-02-15",
+    "status": "pending"
+  },
+  {
+    "id": 6,
+    "name": "Deploy to Production",
+    "desc": "Deploy the application to Vercel and connect the backend.",
+    "due_date": "2025-02-18",
+    "status": "complete"
+  }
+]
