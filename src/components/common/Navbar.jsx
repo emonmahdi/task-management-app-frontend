@@ -3,11 +3,11 @@ import { useState } from "react";
 import { Link } from "react-router";
 
 const Navbar = ({ togglePopup }) => {
-  const [isAuthenticated, setIsAuthenticated] = useState(true); // Simulate authentication
+  const [isAuthenticated, setIsAuthenticated] = useState(false); // Simulate authentication
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const handleLogout = () => {
-    setIsAuthenticated(false); // Simulate logout
+    setIsAuthenticated(true); // Simulate logout
     setIsDropdownOpen(false); // Close dropdown
   };
 
